@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu3</title>
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+<body>
+        <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/header/eatly-logo copy.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle">
+                Menu <span class="arrow">&gt;</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="./menu1.html">Menu 1</a></li>
+                <li><a href="./menu2.html">Menu 2</a></li>
+                <li><a href="./menu3.html">Menu 3</a></li>
+                <li><a href="./blog2.html">Blog 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="./blog.html">Blog</a></li>
+            <li class="nav-item"><a href="./pricing.html">Pricing</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+          </ul>
+         
+        </nav>
+         
+        <div class="auth">
+          <a href="./login.html" class="login">Login</a>
+          <a href="./sing_up.html" class="signup">Sign Up</a>
+        </div>
+          <button class="burger-btn">☰</button>
+      </div>
+       <div class="mobile-menu d-none">
+        <ul>
+          <li><a href="./menu1.html">Menu 1</a></li>
+          <li><a href="./menu2.html">Menu 2</a></li>
+          <li><a href="./menu3.html">Menu 3</a></li>
+          <li><a href="./blog.html">Blog 1</a></li>
+          <li><a href="./blog2.html">Blog 2</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <a href="./login.html" class="login">Login</a>
+          <a href="./sing_up.html" class="btn">Sign Up</a>
+          
+        </div>
+      </div>
+    </header>
+    <main>
+       <section class="map-section">
+  <div class="map-wrapper">
+    <!-- MAP -->
+    <iframe
+      class="map-iframe"
+      src="https://www.google.com/maps?q=California,USA&z=14&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <!-- ROUTE (fake visual line) -->
+    <svg class="route" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M20 20 L40 35 L60 60" />
+    </svg>
+
+    <!-- RESTAURANT -->
+    <div class="marker restaurant">
+      <img src="./assets/images/home/lasos-logo.png" alt=""> Chicken Hell
+    </div>
+
+    <!-- USER -->
+    <div class="marker user"></div>
+  </div>
+
+  <!-- RIDER CARD -->
+  <div class="rider-card">
+    <div class="rider-header">
+      <img src="./assets/images/home-2/David.png" alt="">
+      <div>
+        <h4>David Smith</h4>
+        <span>Food Rider</span>
+      </div>
+    </div>
+
+    <div class="rider-info">
+      <div>
+        <small>Your Address</small>
+        <p>Hortensia Road Street 178<br>California, USA</p>
+      </div>
+
+      <div class="delivery">
+        <small>Delivery Time</small>
+        <span>15 Minutes</span>
+      </div>
+    </div>
+
+    <button class="status">Pending</button>
+  </div>
+</section>
+<section class="checkout container">
+
+  <!-- LEFT CURL IMAGE -->
+  <img
+    src="./assets/images/home-2/arrow-1.png"
+    alt="curve left"
+    class="curl curl-left"
+  />
+
+  <!-- CARD -->
+  <div class="checkout-card">
+    <!-- ITEMS -->
+    <div id="cartItems"></div>
+
+    <!-- COUPON -->
+    <div class="coupon">
+  <input type="text" id="couponInput" placeholder="Apply Coupon">
+  <button id="applyCoupon">Apply</button>
+</div>
+
+
+    <!-- SUMMARY -->
+    <div class="summary">
+      <div class="row">
+        <span>Subtotal</span>
+        <span id="subtotal">$0.00</span>
+      </div>
+      <div class="row">
+        <span>Delivery</span>
+        <span>$3.59</span>
+      </div>
+      <div class="row total">
+        <span>Total</span>
+        <span id="total">$0.00</span>
+      </div>
+    </div>
+
+   <button class="pay-btn" id="payBtn">Review Payment</button>
+  </div>
+
+  <!-- RIGHT CURL IMAGE -->
+  <img
+    src="./assets/images/home-2/arrow-2.png"
+    alt="curve right"
+    class="curl curl-right"
+  />
+
+</section>
+ <section class="promo">
+        <div class="promo__content">
+          <h2>GET 50%</h2>
+
+          <div class="subscribe">
+            <input type="email" placeholder="Enter your email" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+
+        <div class="promo__image">
+          <img src="./assets/images/home/tovuqcha.png" alt="Food" />
+        </div>
+      </section>
+    </main>
+     <footer class="footer">
+      <!-- Tepadagi content -->
+      <div class="footer__content-top container">
+        <!-- Chap ustun tepada: faqat logo -->
+        <div class="footer__left-top">
+          <img
+            src="./assets/images/footer/eatly-logo.png"
+            alt="Eatly logo"
+            class="footer__logo"
+          />
+        </div>
+
+        <!-- Ong ustun tepada: nav linklar -->
+        <div class="footer__right-top">
+          <nav class="footer__menu">
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- O‘rtadagi gorizontal chiziq -->
+      <div class="footer__divider container"></div>
+
+      <!-- Pastdagi content -->
+      <div class="footer__content-bottom container">
+        <!-- Chap ustun pastda: copyright -->
+        <div class="footer__left-bottom">
+          <p class="footer__copyright">© 2025 EATLY All Rights Reserved.</p>
+        </div>
+
+        <!-- Ong ustun pastda: social ikonlar -->
+        <div class="footer__right-bottom">
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./assets/images/footer/instagram-logo.png"
+                alt="Instagram"
+            /></a>
+            <a href="https://www.linkedin.com/"
+              ><img
+                src="./assets/images/footer/Linkedin-logo.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="./assets/images/footer/facebook-logo.png"
+                alt="Facebook"
+            /></a>
+            <a href="https://x.com/"
+              ><img src="./assets/images/footer/twitter-logo.png" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu3.js"></script>
+    <script src="./js/header.js"></script>
+</body>
+</html>

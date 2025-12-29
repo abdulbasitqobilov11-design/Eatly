@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+<body>
+        <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/header/eatly-logo copy.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle">
+                Menu <span class="arrow">&gt;</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="./menu1.html">Menu 1</a></li>
+                <li><a href="./menu2.html">Menu 2</a></li>
+                <li><a href="./menu3.html">Menu 3</a></li>
+                <li><a href="./blog2.html">Blog 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="./blog.html">Blog</a></li>
+            <li class="nav-item"><a href="./pricing.html">Pricing</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+          </ul>
+         
+        </nav>
+         
+        <div class="auth">
+          <a href="./login.html" class="login">Login</a>
+          <a href="./sing_up.html" class="signup">Sign Up</a>
+        </div>
+          <button class="burger-btn">☰</button>
+      </div>
+       <div class="mobile-menu d-none">
+        <ul>
+          <li><a href="./menu1.html">Menu 1</a></li>
+          <li><a href="./menu2.html">Menu 2</a></li>
+          <li><a href="./menu3.html">Menu 3</a></li>
+          <li><a href="./blog.html">Blog 1</a></li>
+          <li><a href="./blog2.html">Blog 2</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <a href="./login.html" class="login">Login</a>
+          <a href="./sing_up.html" class="btn">Sign Up</a>
+          
+        </div>
+      </div>
+    </header>
+    <main>
+<section class="pricing-section">
+  <div class="title-wrap ">
+    <img src="./assets/images/home-2/white-arrow.png" class="title-arrow" alt="">
+    <h2 class="pricing-title">Our Pricing</h2>
+  </div>
+
+  <div class="pricing-mockup">
+    <img src="./assets/images/home-2/17-Home V1 1.png" alt="">
+
+    <!-- 3 CHIZIQLI ICONLAR -->
+    <img src="" class="decor decor-top-right" alt="">
+    <img src="lines.png" class="decor decor-bottom-left" alt="">
+  </div>
+</section>
+<section class="pricing">
+  <div class="pricing-card">
+
+    <!-- HEADER -->
+    <div class="pricing-header">
+      <div>
+        <h3>Pricing</h3>
+        <p>Affordable Basic<br>& Pro Plans</p>
+      </div>
+
+      <div class="plan-title">
+        <h4>Basic</h4>
+        <p>Completely 100%<br>Free Plan</p>
+      </div>
+
+      <div class="plan-title">
+        <h4>Premium</h4>
+        <p>Amazing Premium<br>Features Plan</p>
+      </div>
+    </div>
+
+    <!-- PRICE -->
+    <div class="pricing-price">
+      <div></div>
+
+      <div class="price">
+        <span>$</span><b>0</b><small>/month</small>
+      </div>
+
+      <div class="price">
+        <span>$</span><b>5</b><small>/month</small>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="pricing-body">
+      <div class="feature">Support 24/7</div>
+      <div class="check yes">✔</div>
+      <div class="check yes">✔</div>
+
+      <div class="feature">Fast Delivery</div>
+      <div class="check yes">✔</div>
+      <div class="check yes">✔</div>
+
+      <div class="feature">20% Off Food Deals</div>
+      <div class="check yes">✔</div>
+      <div class="check yes">✔</div>
+
+      <div class="feature">Transaction History</div>
+      <div class="check yes">✔</div>
+      <div class="check yes">✔</div>
+
+      <div class="feature">Weekend Deals</div>
+      <div class="check no">✖</div>
+      <div class="check yes">✔</div>
+
+      <div class="feature">Dashboard Access</div>
+      <div class="check no">✖</div>
+      <div class="check yes">✔</div>
+
+      <div class="feature">Premium Group Access</div>
+      <div class="check no">✖</div>
+      <div class="check yes">✔</div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="pricing-footer">
+      <div></div>
+      <button class="btn" data-plan="Basic">Start Free</button>
+      <button class="btn" data-plan="Premium">Start Pro</button>
+    </div>
+
+  </div>
+</section>
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <span class="close">✖</span>
+    <h3 id="modalTitle"></h3>
+    <p>Enter your card details</p>
+
+    <input type="text" placeholder="Card Number">
+    <div class="row">
+      <input type="text" placeholder="MM / YY">
+      <input type="text" placeholder="CVV">
+    </div>
+
+    <button id="confirmBtn">Confirm</button>
+    <p class="success">✅ Payment successful</p>
+  </div>
+</div>
+  
+<section class="qx9-root">
+  <div class="container qx9-grid">
+
+    <!-- LEFT -->
+    <div class="qx9-left">
+      <h1 class="qx9-title">
+        Control <span>Purchases</span><br />
+        Via Dashboard
+      </h1>
+
+      <div class="qx9-orders">
+        <!-- JS -->
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="qx9-right">
+      <div class="qx9-card">
+
+        <div class="qx9-cardTop">
+          <h3>Purchases</h3>
+          <select>
+            <option>This month</option>
+            <option>Last month</option>
+          </select>
+        </div>
+
+        <div class="qx9-stats">
+          <!-- JS -->
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+ <section class="csay">
+  <div class="csay__container">
+
+    <h2 class="csay__title">
+      Customer <span>Say</span>
+    </h2>
+
+    <div class="csay__viewport">
+      <div class="csay__track">
+
+        <!-- CARD -->
+        <article class="csay__card">
+          <div class="csay__user">
+            <img src="./assets/images/home/Aleksandr.png" alt="user" />
+            <div>
+              <h4>Alexander R.</h4>
+              <p>01 Year With Us</p>
+            </div>
+          </div>
+          <p class="csay__text">
+            “ Online invoice payment helps companies save <br> 
+             time, are faster and save maximum effort for the <br>
+              clients and save maximum effort. Online invoice <br>
+               payment helps companies save time ”
+          </p>
+
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+        <article class="csay__card">
+          <p class="csay__text">
+            “ Online invoice payment helps companies save <br>
+             time, are faster and save maximum effort for the <br>
+              clients and save maximum effort. Online invoice <br>
+               payment helps companies save time ”
+          </p>
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+        <article class="csay__card">
+          <p class="csay__text">
+            “ Online invoice payment helps companies save <br>
+             time, are faster and save maximum effort for the <br>
+              clients and save maximum effort. Online invoice <br>
+               payment helps companies save time ”
+          </p>
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+        <article class="csay__card">
+          <p class="csay__text">
+          “ Online invoice payment helps companies save <br>
+           time, are faster and save maximum effort for the <br>
+            clients and save maximum effort. Online invoice <br>
+             payment helps companies save time ”
+          </p>
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="csay__pagination"></div>
+
+  </div>
+</section>
+
+    </main>
+     <footer class="footer">
+      <!-- Tepadagi content -->
+      <div class="footer__content-top container">
+        <!-- Chap ustun tepada: faqat logo -->
+        <div class="footer__left-top">
+          <img
+            src="./assets/images/footer/eatly-logo.png"
+            alt="Eatly logo"
+            class="footer__logo"
+          />
+        </div>
+
+        <!-- Ong ustun tepada: nav linklar -->
+        <div class="footer__right-top">
+          <nav class="footer__menu">
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- O‘rtadagi gorizontal chiziq -->
+      <div class="footer__divider container"></div>
+
+      <!-- Pastdagi content -->
+      <div class="footer__content-bottom container">
+        <!-- Chap ustun pastda: copyright -->
+        <div class="footer__left-bottom">
+          <p class="footer__copyright">© 2025 EATLY All Rights Reserved.</p>
+        </div>
+
+        <!-- Ong ustun pastda: social ikonlar -->
+        <div class="footer__right-bottom">
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./assets/images/footer/instagram-logo.png"
+                alt="Instagram"
+            /></a>
+            <a href="https://www.linkedin.com/"
+              ><img
+                src="./assets/images/footer/Linkedin-logo.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="./assets/images/footer/facebook-logo.png"
+                alt="Facebook"
+            /></a>
+            <a href="https://x.com/"
+              ><img src="./assets/images/footer/twitter-logo.png" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/pricing.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/header.js"></script>
+</body>
+</html>

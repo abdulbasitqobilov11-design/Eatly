@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Example</title>
+    <link rel="stylesheet" href="./sass/style.css"/>
+    <link rel="stylesheet" href="./assets/images/header/nimadur.png">
+  </head>
+  <body>
+   <div class="loading">
+     <span class="loader">Loading</span>
+    </div>
+
+     
+      
+ 
+      <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="/">
+            <img src="./assets/images/header/eatly-logo copy.png" alt="Logo" />
+          </a>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li class="nav-item dropdown">
+              <button class="dropdown-toggle">
+                Menu <span class="arrow">&gt;</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="./menu1.html">Menu 1</a></li>
+                <li><a href="./menu2.html">Menu 2</a></li>
+                <li><a href="./menu3.html">Menu 3</a></li>
+                <li><a href="./blog2.html">Blog 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="./blog.html">Blog</a></li>
+            <li class="nav-item"><a href="./pricing.html">Pricing</a></li>
+            <li class="nav-item"><a href="./contact.html">Contact</a></li>
+          </ul>
+         
+        </nav>
+         
+        <div class="auth">
+          <a href="./login.html" class="login">Login</a>
+          <a href="./sing_up.html" class="signup">Sign Up</a>
+        </div>
+          <button class="burger-btn">☰</button>
+      </div>
+       <div class="mobile-menu d-none">
+        <ul>
+          <li><a href="./menu1.html">Menu 1</a></li>
+          <li><a href="./menu2.html">Menu 2</a></li>
+          <li><a href="./menu3.html">Menu 3</a></li>
+          <li><a href="./blog.html">Blog 1</a></li>
+          <li><a href="./blog2.html">Blog 2</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <a href="./login.html" class="login">Login</a>
+          <a href="./sing_up.html" class="btn">Sign Up</a>
+          
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div id="app"></div>
+      </div>
+      <section class="stats">
+        <div class="stats__container container">
+          <div class="stats__item">
+            <div class="stats__number" data-value="10" data-suffix="K+">0</div>
+            <div class="stats__title">Satisfied Customers</div>
+            <div class="stats__desc">All Great Over The World</div>
+          </div>
+
+          <div class="stats__item">
+            <div class="stats__number" data-value="4" data-suffix="M">0</div>
+            <div class="stats__title">Healthy Dishes Sold</div>
+            <div class="stats__desc">Including Milk Shakes Smooth</div>
+          </div>
+
+          <div class="stats__item">
+            <div class="stats__number" data-value="99.99" data-suffix="%">
+              0
+            </div>
+            <div class="stats__title">Reliable Customer Support</div>
+            <div class="stats__desc">We Provide Great Experiences</div>
+          </div>
+        </div>
+      </section>
+      <section class="premium">
+        <div class="premium__container container">
+          <!-- LEFT PHONE -->
+          <div class="premium__image">
+            <img src="./assets/images/home/telefone.png" alt="Mobile App" />
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="premium__content">
+            <h2>
+              Premium <span>Quality</span><br />
+              For Your Health
+            </h2>
+
+            <ul class="premium__list">
+              <li>
+                Premium quality food is made with ingredients that are packed
+                with essential vitamins, minerals.
+              </li>
+              <li>
+                These foods promote overall wellness by support healthy
+                digestion and boosting immunity
+              </li>
+            </ul>
+
+            <div class="premium__btn-wrap">
+              <button class="premium__btn">Download →</button>
+
+              <!-- CURL ARROW -->
+              <img
+                src="./assets/images/home/curly.png"
+                alt="Arrow"
+                class="premium__arrow"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="food">
+        <h2 class="food__title">Our Top <span>Restaurants</span></h2>
+
+        <div id="restaurants" class="food__list container"></div>
+
+        <div class="food__view"><a href="">View All →</a></div>
+
+        <div class="food__divider"></div>
+
+        <h2 class="food__title">Our Top <span>Dishes</span></h2>
+
+        <div id="dishes" class="food__list food__list--dish"></div>
+
+        <div class="food__view-2"><a href="">View All →</a></div>
+      </section>
+      <section class="proDash">
+  <div class="container proDash__grid">
+
+    <!-- LEFT -->
+    <div class="proDash__left">
+      <h1 class="proDash__title">
+        Control <span>Purchases</span><br />
+        Via Dashboard
+      </h1>
+
+      <div class="proDash__orders">
+        <!-- JS -->
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="proDash__right">
+      <div class="proDash__card">
+
+        <div class="proDash__cardTop">
+          <h3>Purchases</h3>
+          <select>
+            <option>This month</option>
+            <option>Last month</option>
+          </select>
+        </div>
+
+        <div class="proDash__stats">
+          <!-- JS -->
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="csay">
+  <div class="csay__container">
+
+    <h2 class="csay__title">
+      Customer <span>Say</span>
+    </h2>
+
+    <div class="csay__viewport">
+      <div class="csay__track">
+
+        <!-- CARD -->
+        <article class="csay__card">
+          <div class="csay__user">
+            <img src="./assets/images/home/Aleksandr.png" alt="user" />
+            <div>
+              <h4>Alexander R.</h4>
+              <p>01 Year With Us</p>
+            </div>
+          </div>
+          <p class="csay__text">
+            “ Online invoice payment helps companies save <br> 
+             time, are faster and save maximum effort for the <br>
+              clients and save maximum effort. Online invoice <br>
+               payment helps companies save time ”
+          </p>
+
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+        <article class="csay__card">
+          <p class="csay__text">
+            “ Online invoice payment helps companies save <br>
+             time, are faster and save maximum effort for the <br>
+              clients and save maximum effort. Online invoice <br>
+               payment helps companies save time ”
+          </p>
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+        <article class="csay__card">
+          <p class="csay__text">
+            “ Online invoice payment helps companies save <br>
+             time, are faster and save maximum effort for the <br>
+              clients and save maximum effort. Online invoice <br>
+               payment helps companies save time ”
+          </p>
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+        <article class="csay__card">
+          <p class="csay__text">
+          “ Online invoice payment helps companies save <br>
+           time, are faster and save maximum effort for the <br>
+            clients and save maximum effort. Online invoice <br>
+             payment helps companies save time ”
+          </p>
+          <div class="csay__stars">★★★★★</div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="csay__pagination"></div>
+
+  </div>
+</section>
+
+
+
+      <section class="promo">
+        <div class="promo__content">
+          <h2>GET 50%</h2>
+
+          <div class="subscribe">
+            <input type="email" placeholder="Enter your email" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+
+        <div class="promo__image">
+          <img src="./assets/images/home/tovuqcha.png" alt="Food" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Tepadagi content -->
+      <div class="footer__content-top container">
+        <!-- Chap ustun tepada: faqat logo -->
+        <div class="footer__left-top">
+          <img
+            src="./assets/images/footer/eatly-logo.png"
+            alt="Eatly logo"
+            class="footer__logo"
+          />
+        </div>
+
+        <!-- Ong ustun tepada: nav linklar -->
+        <div class="footer__right-top">
+          <nav class="footer__menu">
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- O‘rtadagi gorizontal chiziq -->
+      <div class="footer__divider container"></div>
+
+      <!-- Pastdagi content -->
+      <div class="footer__content-bottom container">
+        <!-- Chap ustun pastda: copyright -->
+        <div class="footer__left-bottom">
+          <p class="footer__copyright">© 2025 EATLY All Rights Reserved.</p>
+        </div>
+
+        <!-- Ong ustun pastda: social ikonlar -->
+        <div class="footer__right-bottom">
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/"
+              ><img
+                src="./assets/images/footer/instagram-logo.png"
+                alt="Instagram"
+            /></a>
+            <a href="https://www.linkedin.com/"
+              ><img
+                src="./assets/images/footer/Linkedin-logo.png"
+                alt="LinkedIn"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="./assets/images/footer/facebook-logo.png"
+                alt="Facebook"
+            /></a>
+            <a href="https://x.com/"
+              ><img src="./assets/images/footer/twitter-logo.png" alt="Twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+   
+    <script src="./js/header.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

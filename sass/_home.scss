@@ -1,0 +1,323 @@
+:root {
+  --purple: #5F55C7;
+  --container: 1262px;
+}
+
+.premium {
+  padding: 110px 0; 
+}
+
+.premium__container {
+  max-width: var(--container);
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 520px 1fr; /* 👈 MUHIM */
+  align-items: center;
+  column-gap: 120px; /* 👈 ORADAGI MASOFA */
+}
+
+/* LEFT PHONE */
+.premium__image {
+  display: flex;
+  justify-content: center;
+}
+
+.premium__image img {
+  width: 354px;
+  height: 609px;
+}
+
+/* RIGHT CONTENT */
+.premium__content h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 63px;
+}
+
+.premium__content h2 span {
+  color: var(--purple);
+}
+
+.premium__list {
+  list-style: none;
+  margin-bottom: 61px;
+}
+
+.premium__list li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.premium__list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #999;
+}
+
+/* BUTTON */
+.premium__btn-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.premium__btn {
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* CURL ARROW */
+.premium__arrow {
+  position: absolute;
+  right: -95px;
+  bottom: -38px;
+  width: 120px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+
+  .premium__container {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+    text-align: center;
+        padding: 0 15px;
+  }
+
+  .premium__list li {
+    padding-left: 0;
+
+  }
+
+  .premium__list li::before {
+    display: none;
+  }
+
+  .premium__arrow {
+    display: none;
+  }
+  .premium__image img {
+  width: 280px;
+  height: 420px;
+  padding-left: 40px;
+}
+}
+
+
+
+
+
+
+///* ===== Restaurants ===== */
+
+.food {
+  padding: 50px 0;
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700px;
+    color: #2b2b3f;
+    margin-bottom: 40px;
+
+    span { color: #6c5dd3; }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+
+    &--dish { gap: 24px; }
+  }
+
+  &__view {
+    text-align: right;
+    margin-top: 65px;
+    font-size: 14px;
+    color: #9a9a9a;
+    cursor: pointer;
+  }
+  &__view a{
+    text-decoration: none;
+    color: #9a9a9a;
+    padding-right: 180px;
+  }
+  &__view-2 {
+    text-align: right;
+    margin-top: 65px;
+    font-size: 14px;
+    color: #9a9a9a;
+    cursor: pointer;
+  }
+  &__view-2 a{
+    text-decoration: none;
+    color: #9a9a9a;
+    padding-right: 100px;
+  }
+  &__divider {
+    height: 1px;
+    background: #e6e6e6;
+    margin: 45px 0;
+  }
+
+  /* ===== TAG ===== */
+  &__tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 6px;
+
+    &--healthy { background: #fff4d7; color: #f4b400; }
+    &--trending { background: #ffe5e5; color: #ff5c5c; }
+    &--supreme { background: #e7f8f1; color: #2bb673; }
+  }
+
+  /* ===== RESTAURANT ===== */
+  &__restaurant {
+    width: 310px;
+    min-height: 300px; // barqaror balandlik
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,.12);
+    transition: transform 0.35s, box-shadow 0.35s; // all emas
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 35px 80px rgba(0,0,0,.16);
+    }
+
+    img {
+      width: 100%;
+      height: 165px; // aniq balandlik
+      object-fit: cover;
+      display: block;
+    }
+
+    &-body {
+      padding: 16px;
+    }
+
+    &-name {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    &-info {
+      display: flex;
+      gap: 12px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    &-save {
+      position: absolute;
+      right: 14px;
+      bottom: 40px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #f1f1f1;
+      display: grid;
+      place-items: center;
+      font-size: 14px;
+      color: #6c5dd3;
+      cursor: pointer;
+    }
+  }
+
+  /* ===== DISH ===== */
+  &__dish {
+    width: 215px;
+   // barqaror balandlik
+    background: #fff;
+    border-radius: 28px;
+    padding: 14px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.12);
+    transition: transform 0.35s, box-shadow 0.35s; // all emas
+    position: relative;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 35px 70px rgba(0,0,0,.18);
+    }
+
+    img {
+      width: 100%;
+      height: 135px;
+      
+      display: block;
+    }
+
+    &-like {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      font-size: 18px;
+      color: #cfcfcf;
+      cursor: pointer;
+
+      &.active { color: #ff5c5c; }
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+  }
+
+  &__dish-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  &__dish-price {
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  &__dish-add {
+    margin-left: auto;
+    width: 32px;
+    height: 32px;
+    background: #2b2b3f;
+    color: #fff;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}

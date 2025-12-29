@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+///////////////////////
+
+
+
+
+$primary: #5C4EAE;
+$white: #fff;
+
+
+
+.promo {
+  max-width: 1262px;
+  height: 280px;
+  margin: 0 auto;
+  padding: 40px 56px;
+  background-color: $primary;
+  border-radius: 24px;
+
+  display: flex;
+ gap: 200px;
+ align-items: center;
+  position: relative;
+}
+
+/* LEFT */
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: $white;
+  }
+}
+
+/* SUBSCRIBE — RASMDAGIDEK */
+.subscribe {
+  width: 360px;
+  height: 52px;
+  background: $white;
+  border-radius: 12px;
+  padding: 4px;
+
+  display: flex;
+  align-items: center;
+
+  input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 14px;
+    font-size: 14px;
+  }
+
+  button {
+    height: 100%;
+    padding: 0 22px;
+    border: none;
+    border-radius: 10px;
+    background: darken($primary, 6%);
+    color: $white;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}
+
+/* RIGHT IMAGE */
+.promo__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+ 
+
+  position: absolute;
+  right: 72px;
+  bottom: -24px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .promo {
+    height: auto;
+    padding: 32px ;
+    margin: 0 24px;
+  }
+
+  .subscribe {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .promo__image {
+    width: 150px;
+    height: 150px;
+    bottom: -18px;
+  }
+}
+ input{
+  width: 100%;
+ }
+@media (max-width: 480px) {
+  .promo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .promo__image {
+    position: static;
+    align-self: center;
+  }
+}

@@ -1,0 +1,388 @@
+.map-section {
+  padding: 40px;
+  background: #f7f7f7;
+}
+
+.map-wrapper {
+  position: relative;
+  height: 420px;
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+/* MAP */
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(1) brightness(1.05);
+}
+
+/* ROUTE */
+.route {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  path {
+    fill: none;
+    stroke: #2f2f3f;
+    stroke-width: 2;
+    stroke-dasharray: 4;
+  }
+}
+
+/* MARKERS */
+.marker {
+  position: absolute;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  display: flex;
+  align-items: center;
+}
+
+.restaurant {
+  top: 12%;
+  left: 18%;
+}
+
+.user {
+  width: 14px;
+  height: 14px;
+  background: #6c63ff;
+  border-radius: 50%;
+  bottom: 28%;
+  left: 46%;
+}
+
+/* RIDER CARD */
+.rider-card {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.15);
+  position: relative;
+  margin: -80px auto 0;
+}
+
+.rider-header {
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+
+  img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  span {
+    font-size: 12px;
+    color: #888;
+  }
+}
+
+.rider-info {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 12px;
+
+  small {
+    color: #999;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+}
+
+.delivery {
+  margin-top: 8px;
+}
+
+.status {
+  width: 100%;
+  padding: 10px;
+  background: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+
+
+///////////////////////////////////////////////////keyingi section yezkzish///////////////////////////////
+.checkout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* CURVES */
+.curve {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+}
+
+.curve path {
+  fill: none;
+  stroke: #6c63ff;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+.curve-left {
+  left: 50%;
+  top: 20px;
+  transform: translateX(-260px);
+}
+
+.curve-right {
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(140px);
+}
+
+/* CARD */
+.checkout-card {
+  width: 420px;
+
+  padding: 22px;
+
+}
+
+/* ITEM */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fafafa;
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.cart-item img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cart-info {
+  flex: 1;
+
+}
+
+.cart-info h4 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.cart-info span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* COUNTER */
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.counter button {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: none;
+  background: #ecebfd;
+  color: #6c63ff;
+  cursor: pointer;
+}
+
+.counter span {
+  font-size: 13px;
+}
+
+/* PRICE */
+.item-price {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* COUPON */
+.coupon {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.coupon input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.coupon button {
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #6c63ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* SUMMARY */
+.summary .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.summary .total {
+  border-bottom: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* BUTTON */
+.pay-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #6c63ff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+
+}
+/* PAYMENT BUTTON – FORCE HOVER */
+.checkout .pay-btn {
+  background: #6c63ff;
+  transition: all 0.25s ease;
+}
+
+.checkout .pay-btn:hover {
+  background: #574eea;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(108, 99, 255, 0.4);
+}
+
+.checkout .pay-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(108, 99, 255, 0.3);
+}
+
+.checkout {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px 120px; /* pastga joy ochdik */
+}
+
+/* CURL IMAGES */
+.curl {
+  position: absolute;
+  width: 90px;
+  pointer-events: none;
+  bottom: 30px; /* ⬅️ yana shuncha teparoq */
+}
+
+
+.curl-left {
+  left: calc(50% - 300px); /* past chap */
+}
+
+.curl-right {
+  right: calc(50% - 300px); /* past o‘ng */
+}
+@media (max-width: 768px) {
+  .checkout-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .curl-left {
+    left: calc(50% - 220px);
+  }
+
+  .curl-right {
+    right: calc(50% - 220px);
+  }
+}
+@media (max-width: 480px) {
+  .checkout {
+    padding: 60px 16px;
+  }
+
+  .checkout-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 18px;
+  }
+
+  /* chiziqlarni yashiramiz */
+  .curl {
+    display: none;
+  }
+
+  .cart-item {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .cart-item img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .coupon input,
+  .coupon button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .pay-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .counter button {
+    width: 22px;
+    height: 22px;
+  }
+
+  .counter span {
+    font-size: 12px;
+  }
+
+  .item-price {
+    font-size: 12px;
+  }
+}
