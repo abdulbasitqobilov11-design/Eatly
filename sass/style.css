@@ -46,7 +46,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  z-index: 45;
+  z-index: 2;
   height: 80px;
   background: #fff;
   border-bottom: 1px solid #ececec;
