@@ -7,14 +7,15 @@ const toggle = document.querySelector('.dropdown-toggle');
 toggle.addEventListener('click', () => {
   dropdown.classList.toggle('active');
 });
-window.addEventListener("load", () => {
-  const loading = document.querySelector(".loading");
-  if (!loading) return;
-
+document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
-    loading.remove();
+    const loading = document.querySelector(".loading");
+    if (loading) {
+      loading.style.display = "none";
+    }
   }, 2000);
 });
+
 
 
 
