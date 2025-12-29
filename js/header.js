@@ -7,7 +7,14 @@ const toggle = document.querySelector('.dropdown-toggle');
 toggle.addEventListener('click', () => {
   dropdown.classList.toggle('active');
 });
+window.addEventListener("load", () => {
+  const loading = document.querySelector(".loading");
+  if (!loading) return;
 
+  setTimeout(() => {
+    loading.remove();
+  }, 2000);
+});
 
 
 
