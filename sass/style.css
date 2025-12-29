@@ -46,7 +46,7 @@ body {
 .header {
   position: fixed;
   width: 100%;
-  z-index: 9999;
+  z-index: 45;
   height: 80px;
   background: #fff;
   border-bottom: 1px solid #ececec;
@@ -264,7 +264,7 @@ body {
   -webkit-backdrop-filter: blur(60px);
           backdrop-filter: blur(60px);
   background-color: rgba(0, 0, 0, 0.55);
-  z-index: 9999;
+  z-index: 50;
   opacity: 1;
 }
 
