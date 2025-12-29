@@ -8,12 +8,20 @@ toggle.addEventListener('click', () => {
   dropdown.classList.toggle('active');
 });
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    const loading = document.querySelector(".loading");
-    if (loading) {
-      loading.style.display = "none";
-    }
-  }, 2000);
+  const container = document.querySelector(".images");
+  if (!container) return;
+
+  const savedImages = JSON.parse(localStorage.getItem("images")) || [];
+
+  container.innerHTML = "";
+
+  savedImages.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.style.width = "200px";
+    img.style.margin = "10px";
+    container.appendChild(img);
+  });
 });
 
 
