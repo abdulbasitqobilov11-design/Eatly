@@ -278,6 +278,9 @@ color: #252525;
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+  .article-hero__title{
+    padding-top:80px;
+  }
   .article-layout {
     flex-direction: column;
   }

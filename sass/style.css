@@ -2779,6 +2779,7 @@ body {
   }
   .pricing-section .title-wrap {
     gap: 10px;
+    margin-top: 50px;
   }
   .pricing-section .title-wrap .pricing-title {
     font-size: 26px;
@@ -3712,6 +3713,9 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+  .article-hero__title {
+    padding-top: 80px;
+  }
   .article-layout {
     flex-direction: column;
   }
