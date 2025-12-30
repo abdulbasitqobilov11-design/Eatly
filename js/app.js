@@ -7,9 +7,9 @@ const data = {
     "Eatly help you set saving goals, earn cash back offers. Go to disclaimer for more details and get paychecks up to two days early. Get a $20 bonus.",
   buttons: ["Get Started", "Go Pro"],
   rating: "4900+",
-  image: "./assets/images/home/hero.png",   
+  image: "../assets/images/home/hero.png",   
   logo: {
-    src: "./assets/images/home/truspilot.png",      
+    src: "../assets/images/home/truspilot.png",      
     alt: "Trustpilot"
   }
 };
