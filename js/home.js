@@ -47,9 +47,7 @@ function renderRestaurants() {
     restaurantWrap.insertAdjacentHTML("beforeend", `
       <div class="food__restaurant" data-index="${i}">
         <img src="${r.img}" onerror="imageFallback(this)">
-        <div class="food__restaurant-save ${r.saved ? "active" : ""}">
-          ${r.saved ? "★" : "☆"}
-        </div>
+     
         <div class="food__restaurant-body">
           <span class="food__tag food__tag--${r.tag}">${r.tag}</span>
           <div class="food__restaurant-name">${r.name}</div>
