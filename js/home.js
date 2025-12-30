@@ -12,7 +12,7 @@ const IMAGES = {
     d4: "./assets/images/home/lasos.png",
     d5: "./assets/images/home/tovuq.png"
   },
-
+  fallback: "img/fallback.png"
 };
 
 
@@ -35,7 +35,9 @@ const restaurantWrap = document.getElementById("restaurants");
 const dishWrap = document.getElementById("dishes");
 
 
-
+function imageFallback(img) {
+  img.src = IMAGES.fallback;
+}
 
 
 function renderRestaurants() {
