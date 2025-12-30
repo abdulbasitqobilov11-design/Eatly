@@ -2610,7 +2610,6 @@ body {
   font-size: 15px;
   cursor: pointer;
   position: relative;
-  z-index: 5;
 }
 
 /* PAYMENT BUTTON – FORCE HOVER */
