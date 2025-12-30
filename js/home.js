@@ -12,7 +12,7 @@ const IMAGES = {
     d4: "./assets/images/home/lasos.png",
     d5: "./assets/images/home/tovuq.png"
   },
-  fallback: "img/fallback.png"
+  fallback: "../assets/images/home/Hero.png"
 };
 
 
