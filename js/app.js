@@ -30,7 +30,7 @@ left.append(
 
 const right = el("div", "hero__image");
 const img = document.createElement("img");
-
+img.src = data.image;
 
 const float = el("div", "hero__float");
 

@@ -35,7 +35,9 @@ const restaurantWrap = document.getElementById("restaurants");
 const dishWrap = document.getElementById("dishes");
 
 
-
+function imageFallback(img) {
+  img.src = IMAGES.fallback;
+}
 
 
 function renderRestaurants() {
@@ -123,7 +125,7 @@ renderDishes();
 document.addEventListener("DOMContentLoaded", function () {
   const r = (a,b)=>Math.floor(Math.random()*(b-a+1))+a;
 
- 
+  document.querySelector(".expense-price").textContent = "$"+r(300,800)+".00";
   document.querySelector(".voucher-price").textContent = "$"+r(20,150)+".00";
 
   document.querySelector(".expense-text").textContent = "Increased By "+r(5,20)+"%";
