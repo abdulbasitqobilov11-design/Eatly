@@ -12,7 +12,7 @@ const IMAGES = {
     d4: "./assets/images/home/lasos.png",
     d5: "./assets/images/home/tovuq.png"
   },
-  fallback: "img/fallback.png"
+
 };
 
 
@@ -35,9 +35,7 @@ const restaurantWrap = document.getElementById("restaurants");
 const dishWrap = document.getElementById("dishes");
 
 
-function imageFallback(img) {
-  img.src = IMAGES.fallback;
-}
+
 
 
 function renderRestaurants() {
@@ -46,7 +44,7 @@ function renderRestaurants() {
   restaurants.forEach((r, i) => {
     restaurantWrap.insertAdjacentHTML("beforeend", `
       <div class="food__restaurant" data-index="${i}">
-        <img src="${r.img}" onerror="imageFallback(this)">
+
         <div class="food__restaurant-save ${r.saved ? "active" : ""}">
           ${r.saved ? "★" : "☆"}
         </div>
@@ -71,7 +69,7 @@ function renderDishes() {
     dishWrap.insertAdjacentHTML("beforeend", `
       <div class="food__dish" data-index="${i}">
         <div class="food__dish-like">♡</div>
-        <img src="${d.img}" onerror="imageFallback(this)">
+
         <span class="food__tag food__tag--${d.tag}">${d.tag}</span>
         <div class="food__name">${d.name}</div>
         <div class="food__info">
