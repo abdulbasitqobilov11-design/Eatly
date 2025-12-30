@@ -7,6 +7,7 @@ const toggle = document.querySelector('.dropdown-toggle');
 toggle.addEventListener('click', () => {
   dropdown.classList.toggle('active');
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".images");
   if (!container) return;
@@ -24,6 +25,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const loading = document.querySelector(".loading");
+
+  if (loading) {
+    setTimeout(() => {
+      loading.classList.add("loading-hidden");
+    }, 600);
+  }
+});
 
 
 
